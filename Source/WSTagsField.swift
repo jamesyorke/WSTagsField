@@ -15,7 +15,7 @@ public enum WSTagAcceptOption {
 }
 
 open class WSTagsField: UIScrollView {
-    fileprivate let textField = BackspaceDetectingTextField()
+    public let textField = BackspaceDetectingTextField()
 
     /// Dedicated text field delegate.
     open weak var textDelegate: UITextFieldDelegate?
@@ -327,9 +327,9 @@ open class WSTagsField: UIScrollView {
         self.textField.resignFirstResponder()
     }
     
-    open func reloadTextFieldInputViews() {
-        self.textField.reloadInputViews()
-    }
+//    open func reloadTextFieldInputViews() {
+//        self.textField.reloadInputViews()
+//    }
 
     // MARK: - Adding / Removing Tags
     open func addTags(_ tags: [String]) {
